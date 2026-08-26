@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Westfarm Resort & Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Josefin+Sans:wght@300;400;500;600;700&family=Anton&family=Dancing+Script:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
+<link rel="stylesheet" href="../assets/css/contact.css">
+<link rel="stylesheet" href="../assets/css/nav.css">
+ 
+</head>
+<body>
+
+<div class="bg-blobs">
+  <div class="blob blob-gray blob-1"></div>
+  <div class="blob blob-gray blob-2"></div>
+  <div class="blob blob-green blob-3"></div>
+</div>
+
+<!-- ── NAV (matches home.html) ── -->
+<nav id="main-nav">
+  <a class="nav-logo" href="../pages/home.html">
+    <img src="../uploads/logo.png" alt="West Farm logo">
+    <div class="nav-logo-text">
+      <span class="name">WEST FARM</span>
+      <span class="sub">Resort + Hotel</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../pages/home.html">HOME</a></li>
+    <li><a href="../pages/about.html">ABOUT</a></li>
+    <li class="nav-item">
+      <a href="#" class="nav-btn">FACILITIES</a>
+      <div class="dropdown-menu">
+        <a href="../pages/swimmingpool.html">Swimming Pool</a>
+        <a href="../pages/westcrays.html">Westcrays</a>
+        <a href="../pages/playground.html">Kids Playground</a>
+        <a href="../pages/cottages.html">Cottages</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-btn">ACCOMMODATIONS</a>
+      <div class="dropdown-menu">
+        <a href="../pages/accommodations.html">Pavilion Events Place</a>
+        <a href="../pages/accommodations.html">Glampings</a>
+        <a href="../pages/accommodations.html">Private Villas</a>
+      </div>
+    </li>
+    <li><a href="../pages/events.html">EVENTS</a></li>
+    <li><a href="../pages/faqs.html">FAQs</a></li>
+    <li><a href="#" class="active">CONTACT</a></li>
+    <li><a href="../pages/index.html" class="nav-book-btn">BOOK NOW</a></li>
+  </ul>
+</nav>
+
+<!-- ── CONTACT HERO (static single image, no slideshow) ── -->
+<section class="hero" id="hero">
+  <div class="hero-slide active" style="background-image:url('../uploads/background-2.jpg')"></div>
+  <div class="hero-overlay">
+    <span class="eyebrow-tag">Basista, Pangasinan &nbsp;·&nbsp; Get In Touch</span>
+    <h1>CONTACT US</h1>
+    <div class="hero-rule"><span></span></div>
+    <p class="subline">We'd love to hear from you.<br>Reach out for inquiries and reservations.</p>
+  </div>
+</section>
+
+<div class="wave-divider" style="--wave-bg: var(--forest); --wave-fill: var(--cream);">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,70 C240,20 480,120 720,70 C960,20 1200,120 1440,70 L1440,140 L0,140 Z"></path>
+  </svg>
+</div>
+
+<!-- ── GET IN TOUCH / FORM ── -->
+<section class="section contact-main">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <div class="dot-grid small">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">We're Here<br><em>to Help</em></h2>
+        <p class="contact-info-desc">Have questions or need assistance? Our team is ready to assist you. Fill out the form or reach us through any of the following channels.</p>
+
+        <div class="contact-channels">
+          <div class="channel-item">
+            <div class="channel-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="channel-title">Call Us</div>
+              <div class="channel-desc">0910-730-5969<br>0963-011-3868</div>
+            </div>
+          </div>
+          <div class="channel-item">
+            <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="channel-title">Email Us</div>
+              <div class="channel-desc">westfarmresort@gmail.com</div>
+            </div>
+          </div>
+          <div class="channel-item">
+            <div class="channel-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="channel-title">Visit Us</div>
+              <div class="channel-desc">Dumpay West, Basista<br>Pangasinan, Philippines 2411</div>
+            </div>
+          </div>
+          <div class="channel-item">
+            <div class="channel-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="channel-title">Operating Hours</div>
+              <div class="channel-desc">Monday to Sunday &nbsp;·&nbsp; 9:00 AM – 7:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <p class="section-eyebrow">Send Us a Message</p>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-row">
+            <input type="tel" name="contact" placeholder="Contact Number" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+          </div>
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit" class="btn-primary contact-submit">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="--wave-bg: var(--warm); --wave-fill: var(--forest-mid);">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,70 C240,20 480,120 720,70 C960,20 1200,120 1440,70 L1440,140 L0,140 Z"></path>
+  </svg>
+</div>
+
+
+<!-- ── FOOTER (matches home.html) ── -->
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-col footer-brand">
+      <a class="footer-logo" href="../pages/home.html">
+        <img src="../uploads/logo.png" alt="West Farm logo">
+        <div class="footer-logo-text">
+          <span class="name">WEST FARM</span>
+          <span class="sub">Resort + Hotel</span>
+        </div>
+      </a>
+      <p class="footer-tagline">A peaceful escape where families connect, relax, and make beautiful memories.</p>
+      <div class="footer-social">
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-line"><i class="fas fa-phone"></i><span>0917 571 9628</span></div>
+      <div class="footer-line"><i class="fas fa-envelope"></i><span>westfarmresort@gmail.com</span></div>
+      <div class="footer-line"><i class="fa-brands fa-facebook-f"></i></i><span>Westfarm Resort</span></div>
+      <div class="footer-line"><i class="fas fa-location-dot"></i><span>Dumpay West, Basista,<br>Pangasinan, Philippines</span></div>
+    </div>
+
+    <div class="footer-col footer-nav">
+      <h4>Quick Links</h4>
+      <a href="../pages/home.html">Home</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../pages/swimmingpool.html">Facilities</a>
+      <a href="../pages/accommodations.html">Accommodations</a>
+      <a href="../pages/events.html">Events</a>
+      <a href="../pages/faqs.html">FAQs</a>
+      <a href="#" class="active">Contact</a>
+    </div>
+
+    <div class="footer-col footer-hours-col">
+      <h4>Hours</h4>
+      <div class="footer-hours-icon"><i class="fas fa-clock"></i></div>
+      <div class="footer-hours-block">
+        <div class="footer-hours-label">Monday to Sunday</div>
+        <div class="footer-hours-time">9:00 AM – 7:00 PM</div>
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <i class="fas fa-leaf footer-cta-icon"></i>
+      <p class="footer-cta-text">Your getaway starts here.</p>
+      <a href="../pages/index.html" class="footer-cta-btn">Book Your Stay</a>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <div>© 2024 West Farm Resort + Hotel. All rights reserved.</div>
+    <div>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/contact.js"></script>
+
+</body>
+</html>

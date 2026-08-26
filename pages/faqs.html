@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>West Farm – FAQs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Josefin+Sans:wght@300;400;500;600;700&family=Anton&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/faqs.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <style>
+    /* category dividers for the expanded FAQ list */
+    .faq-category {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin: 44px 0 18px;
+      position: relative;
+      z-index: 3;
+    }
+    .faq-category:first-of-type { margin-top: 0; }
+
+    /* footer facebook link — icon + label side by side */
+    .footer-social-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      width: fit-content;
+      transition: opacity 0.2s;
+    }
+    .footer-social-link:hover { opacity: 0.85; }
+    .footer-social-icon {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--sage);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--dark); font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+    .footer-social-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem; font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .footer-social-link:hover .footer-social-label { color: var(--gold-lt); }
+  </style>
+</head>
+<body>
+
+<div class="bg-blobs">
+  <div class="blob blob-gray blob-1"></div>
+  <div class="blob blob-gray blob-2"></div>
+  <div class="blob blob-green blob-3"></div>
+</div>
+
+<!-- ── NAV (matches home.html) ── -->
+<nav id="main-nav">
+  <a class="nav-logo" href="../pages/home.html">
+    <img src="../uploads/logo.png" alt="West Farm logo">
+    <div class="nav-logo-text">
+      <span class="name">WEST FARM</span>
+      <span class="sub">Resort + Hotel</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../pages/home.html">HOME</a></li>
+    <li><a href="../pages/about.html">ABOUT</a></li>
+    <li class="nav-item">
+      <a href="#" class="nav-btn">FACILITIES</a>
+      <div class="dropdown-menu">
+        <a href="../pages/swimmingpool.html">Swimming Pool</a>
+        <a href="../pages/westcrays.html">Westcrays</a>
+        <a href="../pages/playground.html">Kids Playground</a>
+        <a href="../pages/cottages.html">Cottages</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-btn">ACCOMMODATIONS</a>
+      <div class="dropdown-menu">
+        <a href="../pages/index.html">Pavilion Events Place</a>
+        <a href="../pages/index.html">Glampings</a>
+        <a href="../pages/index.html">Private Villas</a>
+      </div>
+    </li>
+    <li><a href="../pages/events.html">EVENTS</a></li>
+    <li><a href="#" class="active">FAQs</a></li>
+    <li><a href="../pages/contact.html">CONTACT</a></li>
+    <li><a href="../pages/index.html" class="nav-book-btn">BOOK NOW</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-slide active" style="background-image:url('../uploads/background-4.jpg')"></div>
+  <div class="hero-overlay">
+    <span class="eyebrow-tag">Basista, Pangasinan &nbsp;·&nbsp; Need to Know</span>
+    <h1>FAQS</h1>
+    <div class="hero-rule"><span></span></div>
+    <p class="subline">Answers to what our guests ask us most.</p>
+  </div>
+
+  <!-- decorative leaf branch, upper right, sitting over the wave transition -->
+  <svg class="decor-leaves" style="top:200px; right:20px; width:220px; height:170px; z-index:6;" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 8 C 70 35, 130 55, 205 160" stroke="#97A467" stroke-width="2" fill="none"/>
+    <g fill="#97A467">
+      <g transform="translate(48,30) rotate(45)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+      <g transform="translate(75,52) rotate(50)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+      <g transform="translate(105,78) rotate(48)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+      <g transform="translate(135,105) rotate(52)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+      <g transform="translate(165,130) rotate(48)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+      <g transform="translate(192,152) rotate(50)"><path d="M0,0 C6,-11 19,-11 25,0 C19,11 6,11 0,0 Z"/><line x1="1" y1="0" x2="23" y2="0" stroke="#75824E" stroke-width="1"/></g>
+    </g>
+  </svg>
+</section>
+
+<div class="wave-divider" style="--wave-bg: var(--forest); --wave-fill: var(--cream);">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,70 C240,20 480,120 720,70 C960,20 1200,120 1440,70 L1440,140 L0,140 Z"></path>
+  </svg>
+</div>
+
+<div style="position:relative;">
+  <!-- decorative dot grid, upper left of content, just under the wave -->
+  <div class="decor-dots" style="top:18px; left:24px;"></div>
+
+  <!-- soft solid organic blob sitting behind the bottom-left leaf branch -->
+  <svg class="decor-blob" style="bottom:-6px; left:-20px; width:340px; height:280px;" viewBox="0 0 340 280" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,60 C 110,10 230,20 320,100 C 300,190 190,240 90,260 C 40,268 15,260 0,250 Z" fill="#97A467" opacity=".35"/>
+  </svg>
+
+  <!-- decorative leaf branch, lower left, near footer -->
+  <svg class="decor-leaves" style="bottom:0px; left:-10px; width:200px; height:230px;" viewBox="0 0 200 230" xmlns="http://www.w3.org/2000/svg">
+    <path d="M190 10 C 130 55, 80 110, 20 220" stroke="#75824E" stroke-width="2" fill="none"/>
+    <g fill="#75824E">
+      <g transform="translate(150,35) rotate(-42)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#545C34" stroke-width="1"/></g>
+      <g transform="translate(122,62) rotate(-46)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#545C34" stroke-width="1"/></g>
+      <g transform="translate(93,95) rotate(-44)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#545C34" stroke-width="1"/></g>
+      <g transform="translate(64,132) rotate(-48)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#545C34" stroke-width="1"/></g>
+      <g transform="translate(40,168) rotate(-44)"><path d="M0,0 C6,-12 20,-12 26,0 C20,12 6,12 0,0 Z"/><line x1="1" y1="0" x2="24" y2="0" stroke="#545C34" stroke-width="1"/></g>
+      <g transform="translate(22,202) rotate(-46)"><path d="M0,0 C5,-10 17,-10 22,0 C17,10 5,10 0,0 Z"/><line x1="1" y1="0" x2="20" y2="0" stroke="#545C34" stroke-width="1"/></g>
+    </g>
+  </svg>
+
+  <section class="faq-section">
+
+    <!-- ── ABOUT WESTFARM RESORT ── -->
+    <div class="faq-category">About Westfarm Resort</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-seedling"></i></span>
+        <span class="faq-question-text">What is Westfarm Resort?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Westfarm Resort is a nature-inspired destination designed to give guests a relaxing and
+        memorable countryside experience. We aim to bring together nature, comfort, recreation,
+        and warm hospitality in one welcoming place.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-circle-question"></i></span>
+        <span class="faq-question-text">Why is it called Westfarm Resort?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        The name Westfarm is inspired by our location in Barangay Dumpay West, Basista,
+        Pangasinan. "West" represents our roots and connection to our local community, while
+        "Farm" reflects our vision of creating a nature-inspired resort that celebrates the
+        beauty and tranquility of the countryside.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="faq-question-text">Where is Westfarm Resort located?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Westfarm Resort is located in Roxas Street, Barangay Dumpay West, Basista, Pangasinan.
+        You can find us on Google Maps
+        <a href="https://maps.app.goo.gl/nMpmVSfSvu2hoHtE6" target="_blank" rel="noopener">here</a>.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-star"></i></span>
+        <span class="faq-question-text">What makes Westfarm Resort special?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Westfarm Resort is designed to be more than just a place to stay. It is a place where
+        guests can slow down, enjoy nature, spend quality time with loved ones, and create
+        lasting memories.
+      </div>
+    </div>
+
+    <!-- ── RESERVATIONS & ACCOMMODATIONS ── -->
+    <div class="faq-category">Reservations &amp; Accommodations</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-calendar-check"></i></span>
+        <span class="faq-question-text">Do I need to make a reservation before visiting?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        We recommend making a reservation in advance, especially during weekends, holidays, and
+        peak seasons. This allows us to better accommodate your needs and ensure availability.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-phone"></i></span>
+        <span class="faq-question-text">How can I make a reservation?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        You may contact Westfarm Resort through our official contact channels to inquire about
+        availability, rates, and reservations.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-bed"></i></span>
+        <span class="faq-question-text">What types of accommodations are available?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Westfarm Resort offers comfortable accommodations designed for guests looking for a
+        relaxing stay — including Private Villas, Glamping, and Cottages. Please contact us for
+        the latest accommodation options and rates.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-clock"></i></span>
+        <span class="faq-question-text">What are your check-in &amp; check-out times?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Our standard check-in time is 2:00 PM, and check-out is 12:00 PM. Early check-in and
+        late check-out may be accommodated depending on availability and applicable charges.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-champagne-glasses"></i></span>
+        <span class="faq-question-text">Can I book the resort for a private event?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Yes. Westfarm Resort may accommodate private gatherings and special events, subject to
+        availability and the requirements of the occasion. Please contact us to discuss your event.
+      </div>
+    </div>
+
+    <!-- ── FACILITIES & ACTIVITIES ── -->
+    <div class="faq-category">Facilities &amp; Activities</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-water-ladder"></i></span>
+        <span class="faq-question-text">What facilities are available at Westfarm Resort?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Our facilities include an events place, public swimming pools for adults and kids,
+        cottages, private villas, and glamping. Facilities and amenities may vary depending on
+        the type of booking.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-people-roof"></i></span>
+        <span class="faq-question-text">Is Westfarm Resort family-friendly?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Yes. Westfarm Resort welcomes families and guests of different ages. Our goal is to
+        provide a safe, comfortable, and enjoyable environment where families can spend quality
+        time together.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-cake-candles"></i></span>
+        <span class="faq-question-text">Can we celebrate birthdays and other special occasions here?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Absolutely! Westfarm Resort welcomes birthdays, reunions, anniversaries, company
+        gatherings, and other special occasions. Please contact us for information about
+        available venues, packages, and arrangements.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-ring"></i></span>
+        <span class="faq-question-text">Can we hold weddings or large events at Westfarm Resort?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        We welcome inquiries for weddings and other large gatherings at our Pavilion. Event
+        availability, venue options, guest capacity, and packages depend on the requirements of
+        your event. Our team would be happy to discuss your plans with you.
+      </div>
+    </div>
+
+    <!-- ── FOOD & RESORT POLICIES ── -->
+    <div class="faq-category">Food &amp; Resort Policies</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-utensils"></i></span>
+        <span class="faq-question-text">Can we bring our own food and drinks?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Yes, outside food and beverages are allowed without corkage. Alcoholic drinks are
+        allowed but we request our guests to drink responsibly and consume alcohol in moderation.
+        We also encourage you to try our in-house West Crays restaurant, which uses fresh,
+        farm-to-table ingredients.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-paw"></i></span>
+        <span class="faq-question-text">Are pets allowed?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Absolutely! Westfarm Resort is pet-friendly. Bring your furry friends along and enjoy
+        the resort together. We kindly ask pet owners to supervise their pets, clean up after
+        them, and be respectful of other guests.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-credit-card"></i></span>
+        <span class="faq-question-text">What is your mode of payment?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        We accept Cash and GCash payments. Bank transfers are not yet available. For
+        reservations and events, a down payment may be required to confirm your booking.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-square-parking"></i></span>
+        <span class="faq-question-text">Is parking available?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Yes, parking is available for guests.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-cloud-rain"></i></span>
+        <span class="faq-question-text">Is Westfarm Resort open during rainy weather?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Yes, the resort generally remains open during rainy weather. However, certain outdoor
+        activities or facilities may be temporarily restricted when weather conditions could
+        affect guest safety.
+      </div>
+    </div>
+
+    <!-- ── DAY VISITS & OVERNIGHT STAYS ── -->
+    <div class="faq-category">Day Visits &amp; Overnight Stays</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-sun"></i></span>
+        <span class="faq-question-text">Do you accept day guests?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Day guests and walk-ins are welcome at Westfarm Resort. However, for guests planning to
+        stay in one of our villas or glamping, we highly recommend booking in advance to secure
+        your preferred accommodation and date, especially during weekends, holidays, and peak
+        seasons.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-suitcase"></i></span>
+        <span class="faq-question-text">What should I bring for my visit?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Guests are encouraged to bring personal necessities, comfortable clothing, appropriate
+        swimwear if using the pool, toiletries, and any other items they may need during their
+        stay.
+      </div>
+    </div>
+
+    <!-- ── CANCELLATIONS & CHANGES ── -->
+    <div class="faq-category">Cancellations &amp; Changes</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-calendar-xmark"></i></span>
+        <span class="faq-question-text">Can I cancel or reschedule my reservation?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        Cancellation and rescheduling are subject to Westfarm Resort's booking and cancellation
+        policies. Please review the terms provided when making your reservation or contact our
+        team for assistance.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+        <span class="faq-question-text">What happens if I arrive late?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        If you expect to arrive later than your scheduled check-in time, please let us know in
+        advance so our team can make the appropriate arrangements.
+      </div>
+    </div>
+
+    <!-- ── CONTACT US ── -->
+    <div class="faq-category">Contact Us</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggle(this)">
+        <span class="faq-icon"><i class="fa-solid fa-address-book"></i></span>
+        <span class="faq-question-text">How can I contact Westfarm Resort?</span>
+        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+      </button>
+      <div class="faq-answer">
+        For reservations, rates, availability, event inquiries, and other concerns, please reach
+        us at 0917 571 9628, westfarmresort@gmail.com, or through our Westfarm Resort Facebook
+        Page. We look forward to welcoming you!
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── OPERATING HOURS STRIP ── -->
+  <div class="hours-section">
+    <div class="hours-row">
+      <div class="hours-icon"><i class="fa-solid fa-clock"></i></div>
+      <div class="hours-text">
+        <span class="hours-label">Operating Hours</span>
+        <span class="hours-line">Monday to Friday &nbsp;·&nbsp; 9:00 AM – 10:00 PM</span>
+        <span class="hours-line">Weekend &nbsp;·&nbsp; 8:00 AM – 10:00 PM</span>
+      </div>
+    </div>
+
+    <!-- decorative leaf branch, upper right of the hours strip -->
+    <svg class="decor-leaves" style="top:-30px; right:20px; width:220px; height:170px;" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 8 C 70 35, 130 55, 205 160" stroke="#97A467" stroke-width="2" fill="none"/>
+      <g fill="#97A467">
+        <g transform="translate(48,30) rotate(45)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+        <g transform="translate(75,52) rotate(50)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+        <g transform="translate(105,78) rotate(48)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+        <g transform="translate(135,105) rotate(52)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+        <g transform="translate(165,130) rotate(48)"><path d="M0,0 C7,-13 22,-13 29,0 C22,13 7,13 0,0 Z"/><line x1="1" y1="0" x2="27" y2="0" stroke="#75824E" stroke-width="1"/></g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<div class="wave-divider" style="--wave-bg: var(--warm); --wave-fill: var(--forest-mid);">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,70 C240,20 480,120 720,70 C960,20 1200,120 1440,70 L1440,140 L0,140 Z"></path>
+  </svg>
+</div>
+
+<footer>
+
+  <div class="footer-top">
+
+    <div class="footer-col footer-brand">
+      <a class="footer-logo" href="../pages/home.html">
+        <img src="../uploads/logo.png" alt="West Farm logo">
+        <div class="footer-logo-text">
+          <span class="name">WEST FARM</span>
+          <span class="sub">Resort + Hotel</span>
+        </div>
+      </a>
+      <p class="footer-tagline">A peaceful escape where families connect, relax, and make beautiful memories.</p>
+      <div class="footer-social">
+
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-line"><i class="fas fa-phone"></i><span>0917 571 9628</span></div>
+      <div class="footer-line"><i class="fas fa-envelope"></i><span>westfarmresort@gmail.com</span></div>
+      <div class="footer-line"><i class="fa-brands fa-facebook-f"></i></i><span>Westfarm Resort</span></div>
+      <div class="footer-line"><i class="fas fa-location-dot"></i><span>Dumpay West, Basista,<br>Pangasinan, Philippines</span></div>
+    </div>
+
+    <div class="footer-col footer-nav">
+      <h4>Quick Links</h4>
+      <a href="../pages/home.html">Home</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../pages/swimmingpool.html">Facilities</a>
+      <a href="../pages/accommodations.html">Accommodations</a>
+      <a href="../pages/events.html">Events</a>
+      <a href="#" class="active">FAQs</a>
+      <a href="../pages/contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col footer-hours-col">
+      <h4>Hours</h4>
+      <div class="footer-hours-icon"><i class="fas fa-clock"></i></div>
+      <div class="footer-hours-block">
+        <div class="footer-hours-label">Monday to Sunday</div>
+        <div class="footer-hours-time">9:00 AM – 7:00 PM</div>
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <i class="fas fa-leaf footer-cta-icon"></i>
+      <p class="footer-cta-text">Your getaway starts here.</p>
+      <a href="../pages/index.html" class="footer-cta-btn">Book Your Stay</a>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <div>© 2024 Westfarm Resort + Hotel. All rights reserved.</div>
+    <div>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/faqs.js"></script>
+</body>
+</html>
